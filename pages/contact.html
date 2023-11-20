@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+    <head lang="en">
+        <title>CBit Interactive - Contact</title>
+        <link rel="icon" type="image/x-icon" href="../assets/icons/cbit_star.ico">
+        <link rel="stylesheet" href="../data/index.styles.css">
+        <link rel="stylesheet" href="../data/header.css"> <!--header style-->
+        <script src="../data/header.js"></script> <!--Header json-->
+
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+              <li><a href='../index.html'>Home</a></li>
+              <li><a class='dropdown-arrow' href='products.html'>Products</a>
+                <ul class='sub-menus'>
+                  <li><a href='sub/pax-aarkenvarda.html'>Pax A'arkenvarda</a></li>
+                  <li><a href='sub/meteorOS.html'>MeteorOS</a></li>
+                </ul>
+              </li>
+              <li><a class='dropdown-arrow' href='services.html'>Services</a>
+                <ul class='sub-menus'>
+                  <li><a href='sub/website-making.html'>Website Creation</a></li>
+                  <li><a href='sub/publishing.html'>Publishing</a></li>
+                </ul>
+              </li>
+              <li><a href='about.html'>About</a></li>
+              <li><a href='contact.html'>Contact Us</a></li>
+              <li><a href='login.html'>Log in</a></li>
+            </ul>
+          </nav>
+          <br>
+          <div>
+            <h2>Contact us!</h2>
+          </div>
+    </header>
+    <body>
+        <!--Body-->
+        <h1>Contact form</h1>
+        <p>We'd love to hear from you about your game and website ideas and your comments!</p>
+
+        <p>Small notice: I can't seem to get the contact form up and running so just email us at `general.cbit@gmail.com` and I'll get it sorted.</p>
+        <p>Thanks!
+
+            -- Elias
+        </p>
+
+        <div class="container">
+            <form id="contact" action="mailto:general.cbit@gmail.com"> <!--Change to php when done-->
+                <label>Name</label><br>
+                <input type="text" name="name" placeholder="Joe Barnasby"><br>
+                <label>Email</label><br>
+                <input type="text" name="email" placeholder="joe@skibidi.co.pt"><br>
+                <label>Comment</label>
+                <textarea id="subject" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
